@@ -563,6 +563,9 @@ return ResponseEntity.ok(encryptedResponse);
 ```
 
 **Após decriptação pelo WhatsApp:**
+
+Resposta do Health Check:
+
 ```json
 {
   "data": {
@@ -571,6 +574,18 @@ return ResponseEntity.ok(encryptedResponse);
 }
 ```
 
+Resposta do envio da mídia:
+```json
+{
+   "data":{
+      "mediaUrl":"https:\/\/example.com\/media\/decrypted_media.jpg",
+      "flow_token":"flow123456789",
+      "msgTitle":"Sucesso no Upload de Mídia",
+      "msgResponse":"O upload da mídia foi concluído com sucesso."
+   },
+   "screen":"SECOND"
+}
+```
 ---
 
 ## 🔒 Conceitos de Segurança
